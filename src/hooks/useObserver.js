@@ -2,7 +2,7 @@ import React from 'react';
 
 export function useObserver(ref) {
 
-    const [isIntersecting, setIntersecting] = React.useState(false);
+    const [isIntersecting, setIsIntersecting] = React.useState(false);
 
      // OPTIONS
      const options = {
@@ -10,9 +10,9 @@ export function useObserver(ref) {
         rootMargin: '-130px',
         threshold: 0.5, // A threshold of 1.0 means that when 100% of the target is visible within the element specified by the root option, the callback is invoked.
     };
-  
-    const observer = new IntersectionObserver(([entry]) => setIntersecting(entry.isIntersecting),options);
-  
+    // Observer
+    const observer = new IntersectionObserver(([entry]) => setIsIntersecting(entry.isIntersecting),options);
+    // Use Effect
     React.useEffect(() => {
 
         observer.observe(ref.current)
@@ -20,7 +20,7 @@ export function useObserver(ref) {
         return () => observer.disconnect()
      
     }, []);
-  
+    // Return
     return isIntersecting
   };
   
