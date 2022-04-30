@@ -38,10 +38,8 @@ p h3{
   padding: 10px;
 }
 video, img{
+  width: 420px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
-}
-img{
-  width: 420px;
 }

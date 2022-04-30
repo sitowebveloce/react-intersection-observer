@@ -7,7 +7,7 @@ export function useObserver(ref) {
      // OPTIONS
      const options = {
         // root: target.current,
-        rootMargin: '-130px',
+        rootMargin: '0px',
         threshold: 0.5, // A threshold of 1.0 means that when 100% of the target is visible within the element specified by the root option, the callback is invoked.
     };
     // Observer
