@@ -32,8 +32,8 @@ p.observer-text.active{
   background: #ececec;
   color: rebeccapurple;
 }
-p h3{
-  color: red;
+h3{
+  color: rgba(255, 0, 0, 0.875);
   margin: 10px auto;
   padding: 10px;
 }
