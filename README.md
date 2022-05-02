@@ -1,4 +1,4 @@
-# 📷 <span style="color:magenta">⚛️ React Intersection Observer 👀 Hook 🪝.</span>
+# <span style="color:magenta">⚛️ React Intersection Observer 👀 Hook 🪝.</span>
 
 
 ![GitHub version](https://img.shields.io/badge/version-v1.0.0-blue.svg)
